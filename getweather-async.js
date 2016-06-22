@@ -14,6 +14,8 @@ async.map(cities, getWeather, function(err, results) {
   });
   //to print out the max temp
   console.log('temps: ' + temps);
+  //or could use
+  // return Math.max(...temps); or Math.max.apply(null, temps);
   console.log(findMaxTemp(results));
 });
 
@@ -47,5 +49,6 @@ function findMaxTemp(results) {
       cityName = results[i].name;
     }
   }
-  return (cityName + " " + max);
+  return ("The Hottest city is: " + cityName + " " + max);
+
 }
