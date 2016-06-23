@@ -7,7 +7,7 @@
 //
 // The following program file-summary-program.js can be used to test your module:
 //
-var fileSummary = require('./file-summary-module.js');
+var fileSummary = require('./file-summary-module');
 var filename = process.argv[2];
 fileSummary(filename, function(err, summary) {
   if (err) {
