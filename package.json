@@ -1,0 +1,26 @@
+{
+  "name": "npm-demo",
+  "version": "1.0.0",
+  "description": "A demo npm package",
+  "main": "1-argv.js",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "brightness": "^3.0.0",
+    "cows": "^1.1.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkendrick25/node_exercises.git"
+  },
+  "author": "DeeAnn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkendrick25/node_exercises/issues"
+  },
+  "homepage": "https://github.com/dkendrick25/node_exercises#readme"
+}
