@@ -2,7 +2,6 @@ var fs = require('fs');
 
 
 function fileSummary(fileName, callback) {
-  var fileName = process.argv[2];
 
   fs.readFile(fileName, function(error, buffer){
     if (error) {
@@ -11,9 +10,10 @@ function fileSummary(fileName, callback) {
     }
 
     var contents = buffer.toString();
-    var lines = contents.split("\n");
-    console.log("lines: " + lines.length);
-    console.log("Character: " + contents.length);
+    var summary = {};
+    summary.lineCount = contents.split("\n").length;
+    summary.charCount = contents.length;
+    callback(null, summary);
   });
 }
 
